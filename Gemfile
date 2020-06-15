@@ -59,7 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # fillable-pdf
 # gem 'rjb'
 # -v '1.6.1' --source 'https://rubygems.org/'
-gem 'combine_pdf'
+# gem 'combine_pdf'
 gem 'fillable-pdf'
-gem 'pdftoimage'
+# gem 'pdftoimage'
 # gem 'poppler'
