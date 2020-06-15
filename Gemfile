@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
+if Rails.env.production?
+  java_home = '/app/.jdk/'
+  ENV['JAVA_HOME'] = java_home if Dir.exist?(java_home)
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 # Use postgresql as the database for Active Record
@@ -54,6 +59,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # fillable-pdf
+gem 'rjb' # -v '1.6.1' --source 'https://rubygems.org/'
 gem 'fillable-pdf'
 gem 'poppler'
 gem 'pdftoimage'
