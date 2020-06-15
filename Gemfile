@@ -3,10 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
-if Rails.env.production?
-  java_home = '/app/.jdk/'
-  ENV['JAVA_HOME'] = java_home if Dir.exist?(java_home)
-end
+java_home = '/app/.jdk/'
+ENV['JAVA_HOME'] = java_home if Dir.exist?(java_home)
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
