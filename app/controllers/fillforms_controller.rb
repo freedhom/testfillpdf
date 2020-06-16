@@ -13,7 +13,7 @@ class FillformsController < ApplicationController
     setfields
     watermatkpdf(RESULTPDF, WPARCLR)
     pdftoimage(RESULTPDF)
-    showpdf(WPARCLR.to_s + '.jpg')
+    # showpdf(CONTENTPDF)
   end
 
   private
