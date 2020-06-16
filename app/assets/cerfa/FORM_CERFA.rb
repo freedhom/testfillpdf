@@ -22,7 +22,7 @@
  -- COORDONNEES --
  :"topmostSubform[0].Page1[0].D3N_numero[0]"=>"",
  :"topmostSubform[0].Page1[0].D3V_voie[0]"=>"",
- :exit,
+ :"topmostSubform[0].Page1[0].D3W_lieudit[0]"=>"",
  :"topmostSubform[0].Page1[0].D3L_localite[0]"=>"",
  :"topmostSubform[0].Page1[0].D3C_code[0]"=>"",
  :"topmostSubform[0].Page1[0].D3B_boite[0]"=>"",
