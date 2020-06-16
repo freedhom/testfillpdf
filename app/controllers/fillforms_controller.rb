@@ -4,9 +4,9 @@ require 'fillable-pdf'
 # require 'combine_pdf'
 
 class FillformsController < ApplicationController
-  PATH_CERFA = './app/assets/cerfa/'
-  CERFA = 'cerfa.pdf'
-  RESULTPDF = 'resultpdf'
+  PATH_CERFA << '/app/assets/cerfa/'
+  CERFA << 'cerfa.pdf'
+  RESULTPDF << 'resultpdf'
   # PATH_CONTENTPDF = './app/assets/cerfa/contentpdf.pdf'
   # PATH_WPARCELR = './app/assets/cerfa/WPARCLR.pdf'
 

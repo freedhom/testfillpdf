@@ -72,6 +72,8 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
+    combine_pdf (1.0.16)
+      ruby-rc4 (>= 0.1.5)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     erubi (1.9.0)
@@ -107,7 +109,7 @@ GEM
     public_suffix (4.0.5)
     puma (4.3.5)
       nio4r (~> 2.0)
-    rack (2.2.2)
+    rack (2.2.3)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
@@ -144,6 +146,7 @@ GEM
       ffi (~> 1.0)
     regexp_parser (1.7.1)
     rjb (1.6.1)
+    ruby-rc4 (0.1.5)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -204,6 +207,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  combine_pdf
   fillable-pdf
   jbuilder (~> 2.7)
   listen (~> 3.2)
