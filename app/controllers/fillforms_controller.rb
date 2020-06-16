@@ -1,8 +1,6 @@
 require 'combine_pdf'
 require 'fillable-pdf'
-require 'pdftoimage'
-# install gem poppler
-# require 'pdftoimage'
+require 'RMagick'
 
 class FillformsController < ApplicationController
   PATH_CERFA = './app/assets/cerfa/'
@@ -14,7 +12,8 @@ class FillformsController < ApplicationController
   def test
     setfields
     watermatkpdf(RESULTPDF, WPARCLR)
-    showpdf(WPARCLR)
+    pdftoimage(RESULTPDF)
+    showpdf(WPARCLR.to_s + '.jpg')
   end
 
   private
@@ -61,10 +60,9 @@ class FillformsController < ApplicationController
     pdf.save CONTENTPDF
   end
 
-  # # --------- PDF to JPG
-  # def pdftoimage(file)
-  #   images = PDFToImage.open(PATH_CONTENTPDF)
-  #   images.each do |img|
-  #   img.resize('100%').save("./app/assets/cerfa/pagea-#{img.page}.jpg")
-  # end
+  # --------- PDF to JPG
+  def pdftoimage(pdf_file_name)
+    im = Magick::Image.read(pdf_file_name)
+    im[0].write(pdf_file_name + '.jpg') { self.quality = 100 }
+  end
 end
