@@ -1,5 +1,6 @@
 require 'combine_pdf'
 require 'fillable-pdf'
+require 'pdftoimage'
 # install gem poppler
 # require 'pdftoimage'
 
@@ -13,7 +14,7 @@ class FillformsController < ApplicationController
   def test
     setfields
     watermatkpdf(RESULTPDF, WPARCLR)
-    showpdf(CONTENTPDF)
+    showpdf(WPARCLR)
   end
 
   private

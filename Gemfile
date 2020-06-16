@@ -57,7 +57,10 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # ----------------------------------------------
+# gem de completion du PDF FORM
 gem 'fillable-pdf'
-# gem 'pdftoimage'
-# gem 'poppler'
+# gem de merging Certificat + WaterMark
 gem 'combine_pdf'
+# gem Convert Certificat to JPEG
+# gem 'poppler'
+gem 'pdftoimage'
