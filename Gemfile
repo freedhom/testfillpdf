@@ -62,4 +62,4 @@ gem 'fillable-pdf'
 # gem de merging Certificat + WaterMark
 gem 'combine_pdf'
 # gem Convert Certificat to JPEG
-gem 'RMagick'
+gem 'rmagick'

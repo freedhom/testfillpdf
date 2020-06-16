@@ -1,6 +1,6 @@
 require 'combine_pdf'
 require 'fillable-pdf'
-require 'RMagick'
+require 'rmagick'
 
 class FillformsController < ApplicationController
   PATH_CERFA = './app/assets/cerfa/'
