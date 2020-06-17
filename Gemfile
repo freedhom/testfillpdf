@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
+java_home = '/app/.jdk/'
+ENV['JAVA_HOME'] = java_home if Dir.exist?(java_home)
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 # Use postgresql as the database for Active Record
@@ -34,6 +37,7 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'geocoder'
+gem 'fillable-pdf'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
