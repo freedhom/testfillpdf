@@ -21,9 +21,9 @@ class CertificateRequestsController < ApplicationController
     @user = current_user
     @certificate_request.user = @user
     if @certificate_request.save
-      redirect_to certificate_request_path(@certificate_request)
       setfieldscerfa
       pdftoimage(RESULTPDF)
+      redirect_to certificate_request_path(@certificate_request)
     else
       render :new
     end
