@@ -38,6 +38,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'geocoder'
 gem 'fillable-pdf'
+gem 'rmagick'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
